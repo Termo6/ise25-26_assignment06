@@ -15,6 +15,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
  */
 @Mapper(componentModel = "spring")
 @ConditionalOnMissingBean // prevent IntelliJ warning about duplicate beans
+
 public interface PosDtoMapper {
     PosDto fromDomain(Pos source);
     Pos toDomain(PosDto source);
